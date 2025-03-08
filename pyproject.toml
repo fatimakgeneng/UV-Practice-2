@@ -1,0 +1,22 @@
+[project]
+name = "project3litellm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Fatima Khan", email = "pinkoosagi@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "litellm>=1.60.8",
+]
+
+[project.scripts]
+project3litellm = "project3litellm:main"
+gemini1 = "project3litellm.hello:call_gemini"
+gemini2 = "project3litellm.hello:call_gemini2"
+gemini3 = "project3litellm.hello:call_gemini3"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
